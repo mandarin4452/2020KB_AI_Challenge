@@ -1,0 +1,51 @@
+body {
+    background-color:#FCAF17;
+}
+
+nav {
+    background-color: #FFCC00;
+    color : white;
+}
+
+h4 {
+    color : white;
+}
+
+nav a, ul {
+    color : white;
+    font-family: 'Jua', sans-serif;
+}
+
+img {
+    height : 50px;
+}
+
+h3 {
+    color : white;
+    font-size : 2.0rem;
+}
+.container {
+    width : 100%; 
+    background-color:#FCAF17;
+    color : white;
+    text-align: center;
+    margin-top: 3%;
+    font-family: 'Jua', sans-serif;   
+    
+}
+
+.col img {
+    margin-left : 20%;
+}
+.col h3 {
+    margin-right : 20%;
+    margin-top : 10%;
+}
+
+
+
+
+a, a:hover {
+    text-decoration: none;
+    color : white;
+}

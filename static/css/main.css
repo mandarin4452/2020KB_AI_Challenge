@@ -1,0 +1,63 @@
+body {
+    background-color:#FCAF17;
+}
+
+nav {
+    background-color: #FFCC00;
+    color : white;
+}
+
+
+nav a, ul {
+    color : white;
+    font-family: 'Jua', sans-serif;
+}
+
+img {
+    height : 50px;
+}
+
+.grid {
+    display : grid;
+    background-color:#FCAF17;
+    color : white;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+    grid-template-columns:repeat(4,1fr); 
+    grid-template-rows: 200px 300px 200px;
+    grid-template-areas: 
+    "header header header header"
+    "new_cli new_cli org_cli org_cli"
+    "footer footer footer footer";
+}
+
+a, a:hover {
+    text-decoration: none;
+    color : white;
+}
+
+
+.header {
+    margin-top : 5%;
+    border: 3px;
+    vertical-align: middle;
+    grid-area: header;
+}
+
+.new_cli {
+    margin-top : 10%;
+    vertical-align: middle;
+    grid-area: new_cli;
+}
+
+.org_cli {
+    margin-top : 10%;
+    vertical-align: middle;
+    grid-area : org_cli;
+}
+
+
+.footer {
+    vertical-align: middle;
+    grid-area: footer;
+}

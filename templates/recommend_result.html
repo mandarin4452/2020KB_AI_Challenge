@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/recommend.css') }}">
+{% endblock %}
+
+{% block body %}
+<nav class="navbar navbar-expand-sm ">
+    <!-- Logo -->
+    
+    <a href="/" class="navbar-brand"><img src="{{ url_for('static',filename='img/icon.png') }}" alt=""></a>
+    <!-- Links -->
+    <ul class="navbar-nav">
+        <li class="nav-item"><a href="/recommend" class="nav-link" style="color : gray;">카드 추천</a></li>
+        <li class="nav-item "><a href="/cards" class="nav-link">주변 내 카드 혜택</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img  style="width : 500px ; height : 300px ;" src="{{ img_url }}" alt="">
+            <hr>
+            <p style = " font-size : 2.0rem;">{{ card }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h1>주요 혜택</h1>
+            {% for detail in details %}
+            <p>● {{ detail }}</p><br>
+            {% endfor %}
+
+            <a href="{{ pdf }}">약관 다운로드(pdf)</a>
+            |
+            <a href="/cards">내 주변 카드 혜택 보기</a>
+        </div>
+    </div>
+</div>
+    
+
+{% endblock %}

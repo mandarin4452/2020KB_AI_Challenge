@@ -1,0 +1,47 @@
+body {
+    background-color:#FCAF17;
+}
+
+nav {
+    background-color: #FFCC00;
+    color : white;
+}
+
+
+nav a, ul {
+    color : white;
+    font-family: 'Jua', sans-serif;
+}
+
+nav img {
+    height : 50px;
+}
+
+.container {
+    display : grid;
+    background-color:#FCAF17;
+    color : white;
+    text-align: left;
+    font-family: 'Jua', sans-serif;
+    margin-bottom: 5%;
+
+}
+
+
+a, a:hover {
+    text-decoration: none;
+    color : white;
+}
+.col ul li{
+    background-color:#FCAF17;
+}
+
+.row {
+    margin-top: 5%;
+}
+.list-group-item {
+    font-size : 1.5rem;
+}
+.footer {
+    text-align: center;
+}
